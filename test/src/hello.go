@@ -83,17 +83,28 @@ package main
 //     println("1*1+1*2+...", i, "*", j, "=", sum) 
 // }
 
-func main() {
-	count, total := sum(1,2,3,4,5)
-	println(count, total)
-}
+// func main() {
+// 	count, total := sum(1,2,3,4,5)
+// 	println(count, total)
+// }
 
-func sum(nums ...int) (count int, sum int) {
-	sum = 0
-	count = 0
-	for _, num := range nums {
-		sum += num
-		count ++
-	}
-	return 
+// func sum(nums ...int) (count int, sum int) {
+// 	sum = 0
+// 	count = 0
+// 	for _, num := range nums {
+// 		sum += num
+// 		count ++
+// 	}
+// 	return 
+// }
+
+	
+import "fmt"
+
+func main() {
+    var a [3]int  //정수형 3개 요소를 갖는 배열 a 선언
+    // a[0] = 1
+    a[1] = 2
+    a[2] = 3
+    fmt.Println(a)
 }
